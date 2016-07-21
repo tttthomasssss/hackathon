@@ -24,6 +24,11 @@ parser.add_argument('-op', '--output-path', type=str, help='path to output')
 parser.add_argument('-o', '--output-file', type=str, help='output file')
 parser.add_argument('-pf', '--phrases-file', type=str, help='phrases file')
 
+# Tensorflow Autoencoder
+# https://gist.github.com/hussius/1534135a419bb0b957b9
+# https://gist.github.com/saliksyed/593c950ba1a3b9dd08d5
+# https://github.com/aymericdamien/TensorFlow-Examples/blob/master/examples/3_NeuralNetworks/autoencoder.py
+# http://cmgreen.io/2016/01/04/tensorflow_deep_autoencoder.html
 
 def autoencoder_apt(vector_file, output_file, phrases_file):
 	logging.info('Loading vector file={}...'.format(vector_file))
